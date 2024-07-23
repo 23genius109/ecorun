@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:paddingBottom="24dp"
+    android:paddingHorizontal="24dp"
+    tools:viewBindingIgnore="true"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_alarm" />
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:text="15초"
+            android:textColor="@color/black"
+            android:fontFamily="@font/pretendard_medium"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/bg_img"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pretendard_medium" />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pretendard_regular" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/o"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_circle"
+            android:background="@drawable/bg_ox"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/gray"/>
+        <ImageView
+            android:id="@+id/x"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_close"
+            android:background="@drawable/bg_ox"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/notknow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="모르겠어요"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendard_semibold"
+        android:background="@drawable/bg_notknow" />
+</LinearLayout>
+
+
+

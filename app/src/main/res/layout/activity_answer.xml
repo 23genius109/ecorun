@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:paddingBottom="24dp"
+    android:paddingHorizontal="24dp"
+    tools:viewBindingIgnore="true"
+    tools:context=".AnswerActivity">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/bg_img"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pretendard_medium" />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pretendard_regular" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="answer"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pretendard_medium"/>
+            <TextView
+                android:id="@+id/my_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="my_answer"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pretendard_medium"/>
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="comment"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pretendard_regular"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="다음으로"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendard_semibold"
+        android:background="@drawable/bg_notknow" />
+</LinearLayout>
+
+
+
