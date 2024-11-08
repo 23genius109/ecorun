@@ -9,6 +9,7 @@
     android:paddingBottom="24dp"
     android:paddingHorizontal="24dp"
     tools:viewBindingIgnore="true"
+    android:background="@color/white"
     tools:context=".AnswerActivity">
     <ImageView
         android:id="@+id/img"
@@ -23,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="01"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:textColor="@color/black"
         android:fontFamily="@font/pretendard_medium" />
     <TextView
@@ -32,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
         android:text="content"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textColor="@color/black"
         android:fontFamily="@font/pretendard_regular" />
     <View
@@ -54,7 +55,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:text="answer"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/pretendard_medium"/>
             <TextView
@@ -63,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text="my_answer"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/pretendard_medium"/>
             <TextView
@@ -71,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="comment"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/pretendard_regular"/>
         </LinearLayout>
@@ -83,7 +84,7 @@
         android:gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:text="다음으로"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textColor="@color/white"
         android:fontFamily="@font/pretendard_semibold"
         android:background="@drawable/bg_notknow" />

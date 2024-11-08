@@ -54,11 +54,13 @@ class RankingActivity : AppCompatActivity() {
             loadRanking()
         } else {
             val intent = Intent(this, QuizActivity::class.java)
+            finishAffinity()
             startActivity(intent)
         }
 
         next.setOnClickListener() {
             val intent = Intent(this, MainActivity::class.java)
+            finishAffinity()
             startActivity(intent)
         }
     }

@@ -54,6 +54,7 @@ class AnswerActivity : AppCompatActivity() {
             quizRandomList.addAll(numbersRandom)
         } else {
             val intent = Intent(this, QuizActivity::class.java)
+            finishAffinity()
             startActivity(intent)
         }
 
@@ -77,6 +78,7 @@ class AnswerActivity : AppCompatActivity() {
         } else {
             val intent = Intent(this, RankingActivity::class.java)
             intent.putExtra("score", score.toString())
+            finishAffinity()
             startActivity(intent)
         }
     }

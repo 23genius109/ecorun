@@ -70,6 +70,7 @@ class QuizActivity : AppCompatActivity() {
             val intent = Intent(this, AnswerActivity::class.java)
             intent.putExtra("answer", quizAnswerList.toString())
             intent.putExtra("random", quizRandomList.toString())
+            finishAffinity()
             startActivity(intent)
         }
     }
